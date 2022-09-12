@@ -1,0 +1,10 @@
+package com.packB;
+
+class packA {
+
+		 void msg() {
+			System.out.println("Hello");
+		}
+
+	}
+

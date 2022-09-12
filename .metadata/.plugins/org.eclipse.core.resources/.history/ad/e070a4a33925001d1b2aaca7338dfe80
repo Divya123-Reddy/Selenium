@@ -1,0 +1,12 @@
+import java.util.Arrays;
+
+public class SplittedString {
+
+	public static void main(String[] args) {
+		String str="divyjhasyjgyhdy";
+		str.substring(str.length(), str.length());
+		
+	}
+	
+
+}

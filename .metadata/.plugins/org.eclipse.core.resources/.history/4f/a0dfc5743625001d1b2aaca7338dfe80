@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+public class SplittedString {
+
+	public static void main(String[] args) {
+		String str="divyareddyyyy";
+		String rev=" ";
+		for(int i=1;i<=14;i++) {
+          int st=str.charAt(i)-5;
+          System.out.println(st);
+		}
+
+	}
+
+}

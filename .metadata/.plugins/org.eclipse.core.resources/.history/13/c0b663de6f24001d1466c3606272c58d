@@ -1,0 +1,19 @@
+package com.AttraNestedClass;
+
+public class StaticInnerClass {
+	
+	static int data=5;
+
+	public static void main(String[] args) {
+		System.out.println("program started.....");
+		
+
+	}
+	
+	static class InnerClass{
+		void printOrgDettails() {
+			System.out.println("The organization was started");
+
+}
+}
+}

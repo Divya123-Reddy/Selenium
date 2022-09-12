@@ -1,0 +1,13 @@
+package com.Loantestcase;
+
+
+public class CarLoan {
+		@Test
+	public void Webpage() {
+			System.out.println("Webpage Loan");
+	
+}
+		
+
+
+}

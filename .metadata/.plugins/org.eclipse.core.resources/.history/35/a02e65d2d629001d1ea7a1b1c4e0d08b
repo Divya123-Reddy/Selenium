@@ -1,0 +1,33 @@
+package com.selenium;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class JavascripExecutor1 {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.edge.driver","C:\\Users\\daleppagari.divya\\Downloads\\edgedriver_win64\\New folder\\\\msedgedriver.exe");
+		 
+		WebDriver driver = new EdgeDriver();
+		driver.get("https://intranet.attra.com/intranet/");
+		
+		//JavascripExecutor js=(JavascripExecutor) driver;
+	//js.
+		JavascriptExecutor js= (JavascriptExecutor) driver;
+	    WebElement element = (WebElement) js.executeScript("return document.getElementById('txtuser').value='daleppagari.divya';");
+//	element.sendKeys("daleppagari.divya");
+	  WebElement element1=  (WebElement) js.executeScript("return document.getElementById('txtpassword');");
+	  element1.sendKeys("Welcome@1608");
+	  WebElement element2=  (WebElement) js.executeScript("return document.getElementsByClassName('checkmark')\r\n"
+	  		+ " ");
+	  element2.click();
+	  WebElement element3 = (WebElement) js.executeScript("return document.getElementsByClassName('recaptcha-checkbox-checkmark') ");
+	  element3.click();
+	  
+	  
+	    
+	
+	}
+
+}

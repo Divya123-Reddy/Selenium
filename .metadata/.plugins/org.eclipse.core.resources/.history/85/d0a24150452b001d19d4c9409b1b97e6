@@ -1,0 +1,21 @@
+package com.Loantestcase;
+
+
+public class CarLoan {
+		@Test
+	public void Webpage() {
+			System.out.println("Webpage Car Loan");
+	
+}
+		@Test
+		public void Mobpage() {
+			System.out.println("Mobpage Car Loan");
+		}
+		@Test
+		public void Apipage() {
+			System.out.println("Apipage Car Loan");
+		}
+		
+
+
+}

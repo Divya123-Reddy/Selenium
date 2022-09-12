@@ -1,0 +1,13 @@
+package com.Assignment;
+
+
+public class Loginpage {
+	public WebDriver driver;
+	
+	public Loginpage(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
+	}
+	
+
+}

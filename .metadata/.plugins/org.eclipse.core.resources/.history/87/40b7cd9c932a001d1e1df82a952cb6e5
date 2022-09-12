@@ -1,0 +1,38 @@
+package com.zoho.pages;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class Loginpage {
+	public WebDriver driver;
+	
+	public void Loginpage(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
+	}
+	
+	@FindBy(xpath="//input[@id='login_id']")
+	WebElement clicklogin;
+
+	public void clicklogin(String mail, String password) {
+		clicklogin.sendKeys();
+		
+		
+	}
+	
+	
+	
+	
+	
+//	driver.findElement(By.xpath("//input[@id='login_id']")).sendKeys("daleppagari.divya@attra.com.au");
+//	driver.findElement(By.xpath("//button[@id='nextbtn' and @class='btn blue']")).click();
+//	driver.findElement(By.xpath("//input[@id='password']")).sendKeys("Welcome@1608");
+//	driver.findElement(By.xpath("//button[@id='nextbtn' and @class='btn blue']")).click();
+//	
+	
+	
+
+}

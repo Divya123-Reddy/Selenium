@@ -1,0 +1,2 @@
+module Unique {
+}

@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+public class SplittedString {
+
+	public static void main(String[] args) {
+		String str="divyjhasyjgyhdy";
+		for(int i=0;i<=12;i--) {
+	String lastfour=str.substring(str.length()-4, str.length());
+	System.out.println(lastfour);
+		
+	}
+	
+
+}
+}

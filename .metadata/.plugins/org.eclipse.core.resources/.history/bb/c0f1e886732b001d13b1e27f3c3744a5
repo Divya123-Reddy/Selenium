@@ -1,0 +1,28 @@
+package com.Loantestcase;
+
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
+
+public class PersonalLoan {
+	@Test(groups= {"Smoke"})
+	public void WebpagePersonalLoan() {
+			System.out.println("Webpage PersonalLoan Loan");
+	
+}
+	@Parameters("URL")
+		@Test
+		public void MobpagePersonalLoan(String UR) {
+			System.out.println("Mobpage PersonalLoan Loan");
+			System.out.println(UR);
+		}
+	@Parameters("Name")
+		@Test
+		public void ApipagePersonalLoan(String d) {
+			System.out.println(d);
+			
+		}
+		
+
+
+}
+

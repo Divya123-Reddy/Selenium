@@ -1,0 +1,36 @@
+package com.selenium;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Dynamic {
+	public static void main(String[] args) throws InterruptedException {
+		System.setProperty("webdriver.edge.driver","C:\\Users\\daleppagari.divya\\Downloads\\edgedriver_win64\\New folder\\\\msedgedriver.exe");
+		 
+		WebDriver driver = new EdgeDriver();
+		driver.get("https://www.makemytrip.com/");
+		driver.manage().window().maximize();
+		Thread.sleep(2000);
+		
+		driver.findElement(By.xpath("//input[@id='fromCity']")).click();
+		driver.findElement(By.xpath("//input[@placeholder='From']")).sendKeys("kolkata,India");
+		
+		List<WebElement> dynamic = driver.findElements(By.xpath("//div[@class='calc60']/p[1]"));
+		
+		//*[@id="react-autowhatever-1-section-0-item-0"]/div/div[1]/p[1]
+		for(int i=0;i<dynamic.size();i++) {
+			String a=dynamic.get(i).getText();
+			if(a.equalsIgnoreCase("Kolkata, India")) {
+				dynamic.get(i).click();
+				//break;
+			}
+			
+			
+		}
+	}
+
+}

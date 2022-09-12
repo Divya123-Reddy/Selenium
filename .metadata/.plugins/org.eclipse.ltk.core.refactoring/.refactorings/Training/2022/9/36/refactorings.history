@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move &apos;testng.xml&apos; to &apos;Training&apos;" description="Move &apos;testng.xml&apos; to &apos;Training&apos;" destination="/Training" element1="/TestNGDemo/testng.xml" flags="7" id="org.eclipse.ltk.core.refactoring.move.resources" resources="1" stamp="1662183272296" updateReferences="true"/>
+</session>

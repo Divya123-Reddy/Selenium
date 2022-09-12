@@ -1,0 +1,14 @@
+package com.Assignment.testpages;
+
+import java.io.IOException;
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class Testcase {
+	public static void main(String[] args) throws IOException, InterruptedException {
+			System.setProperty("webdriver.edge.driver","C:\\Users\\daleppagari.divya\\Downloads\\edgedriver_win64\\New folder\\\\msedgedriver.exe");
+			 
+			WebDriver driver=new EdgeDriver();
+}

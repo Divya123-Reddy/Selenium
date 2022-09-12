@@ -1,0 +1,16 @@
+package com.Assignment;
+
+import org.openqa.selenium.WebDriver;
+
+public class Loginpage1 {
+	private static final String PageFactory = null;
+	public WebDriver driver;
+	
+	public Loginpage1(WebDriver driver) {
+		this.driver=driver;
+		PageFactory.initElements(driver,this);
+	}
+	@FindBy()
+	
+
+}
